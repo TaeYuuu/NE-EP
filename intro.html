@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Z세대 직장인의 이야기</title>
+	<meta charset="utf-8">	
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="menu.css">
+	
+	
+
+
+	<style>
+		html, body, header,footer, nav, figure, img {box-sizing:border-box; margin: 0; padding:0;}
+		
+
+		.mcontain {width:1900px; margin:0 auto; border: 1px solid blue;  overflow: hidden;}		
+
+		.head{position: relative; height: 890px; border-bottom: 1px solid white; background-color: #ffc502; }
+
+		.head h1{font-family: 'Black Han Sans', sans-serif;
+				position: absolute;
+				top:266px; left:950px;
+				  transform: translate(-50%, -50%);
+				  margin: 0;
+				  color: #ffff;
+				  font-size: 255px;				  
+				  font-weight: 500;
+				  text-align: center;
+				  text-transform: uppercase;
+				  white-space: nowrap; 
+				  -webkit-text-stroke: 3px #0c112d;
+					text-stroke: 2px #0c112d;
+				}
+
+		.head h2{font-family: 'Black Han Sans', sans-serif;
+				position: absolute;
+				top:266px; left:940px;
+				  transform: translate(-50%, -50%);
+				  margin: 0;
+				  color: #0c112d;
+				  font-size: 255px;
+				  font-weight: 500;
+				  text-align: center;
+				  text-transform: uppercase;
+				  white-space: nowrap;
+				   -webkit-text-stroke: 3px #0c112d;
+					text-stroke: 2px #0c112d;
+				}
+		.box1 {position: absolute; left: -180px; top: 60px; margin:0 auto; width: 650px; height: 90px; background-color: white; border: 3px solid #0c112d; transition:.25s; animation: compare 1.5s infinite alternate; animation-timing-function:ease-in-out;}
+		.box1 p{font-size: 65px; margin-top: 12px; margin-left: 300px; color: #ffc502; }
+
+		@-webkit-keyframes compare{
+		  from{
+		    left: -180px;
+		  }
+		  to{
+		    left: -150px;
+		  }
+		}
+
+
+		.s1{position: absolute;
+		 	 width: 1300px; top: 680px; left: 50%;	 	 
+		 	 transform: translate(-50%, -50%);	 	
+		 	}	
+
+		.s2{position: absolute;
+		 	 width: 1300px; top: 680px; left: 50%;	 	 
+		 	 transform: translate(-50%, -50%); z-index: 1;	 		 	
+		 	}	
+
+		.sec2 {position: relative; height: 2650px; background-color: #fbf5eb; background:linear-gradient(180deg, #fbf5eb 56%, #ffc502 44%);}
+		.sec2 p{font-size: 26px; font-family:'Noto Sans KR'; font-weight:500; font-style:sans-serif;}
+				 	
+
+		/*.img1 {position: absolute;
+		 	 width: 53%; top: 660px; left: 50%; 
+		 	 transform: translate(-50%, -50%);}	*/
+
+		.img2 {position: absolute;
+		 	 width: 53%; top: 1600px; left: 50px;
+		 	 }	
+
+		.effect-2 .img2 {
+			  transform: scale(1);
+			  transition: .4s;
+			}
+
+			.effect-2:hover .img2 {
+			  transform: scale(1.2);
+			}
+
+		.box2 {position: absolute;
+			top: 320px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			 width:800px; text-align: center;	   
+			}
+
+
+		.box2-2 {position: absolute;
+			top: 820px;
+			left: 305px;			
+			width: 500px; text-align: left; letter-spacing: -0.4px;   
+			}
+
+
+		.thumb-box {
+		  display:flex; width: 500px; height: 500px;
+		  position:absolute; letter-spacing: -0.8px;
+		}
+
+		.main-title {
+		  font-size:26px;
+		  display:block;		  
+		}
+
+		.description {		 
+		  font-size:26px;
+		  margin-top:5px;		   
+		  display:block;		 
+		  max-height: 0;		  
+		  overflow: hidden;
+		  opacity: 0;
+		  transition: opacity 0.4s ease-out, max-height 0.4s ease-out, margin 0.4s;
+		}
+
+		
+
+
+		.p2-1{position: absolute;
+			 top: 350px; left: 300px;
+			width:800px;
+			text-align: left;
+		    font-size: 90px;
+		    color: #090c41;	line-height: 120%;
+			}
+		.p2-2{position: absolute; 
+			top: 560px; left: 290px;
+			width: 60%; }
+
+		.imgbox1 {position: absolute; top: 695px;
+			left: 815px;			
+			 width:780px; height: 490px;
+			 background-color: white; 
+			 border: 3px solid black;}
+
+		.imgbox1-2 {position: absolute; top: 657px;
+			left: 760px;	
+			 width:865px; height: 540px; 
+			 background-color: #ffc502; 
+			 border: 3px solid black; overflow: hidden;}
+		.imgbox1-2 img{ width: 100%; margin-top: 54px;}
+
+		.effect-1{ cursor: url(cursorH.png), auto;}
+
+		.effect-1 .imgbox1-2 {
+			  transform: scale(.9);
+			  transition: .4s;
+			}
+
+		.effect-1:hover .imgbox1-2 {
+			  transform: scale(1);
+			}
+
+		.effect-1:hover .description {
+    	opacity:1;
+        max-height: 250px;
+        margin-top: 5px;
+        transition: opacity 1s ease-out, max-height 1.7s ease-out
+		}	
+
+		.box2-3 {position: absolute; background-color: yellow;
+			top: 1630px;
+			left: 360px;			
+			 width: 500px; text-align: center;	   
+			}
+		.box2-3 p{font-weight: 900; font-size: 40px; text-align: left;}
+		.box2-4 {position: absolute; 
+			top: 1720px;
+			left: 390px;			
+			width: 500px; text-align: left;	   
+			}
+
+		.rot3 {position: absolute; top: 1730px; left: 150px;  box-sizing: border-box; width: 40%;
+			border-radius:50%;  border: 3px solid #242424;
+				 -webkit-animation: rotation 15s infinite ease;	
+					}
+		
+		@-webkit-keyframes rotation {
+			    from {-webkit-transform: rotate(0deg);}
+			    to   {-webkit-transform: rotate(-359deg);}
+			}
+
+		.box2-5 {position: absolute; top:1670px; left: 780px; width: 600px; height: 130px; font-size: 86px; color: #fbf5eb;}
+	
+		
+		.box2-6 {position: absolute; top:1780px; left: 740px; width: 930px; height: 140px; background-color: white; border: 3px solid black; transition:.25s;}	
+
+		.box2-7 {position: absolute; top:1770px; left: 730px; width: 930px; height: 140px;  font-size: 130px; color: #090c41; background-color: white; border: 3px solid black; transition:.25s; }
+			
+		.box2-7 p{ text-align: center; font-family: 'Black Han Sans'; 
+								font-weight: 500; margin-top: 14px;
+						      font-style:sans-serif;   
+							  font-size: 105px; color: #090c41;}
+
+
+		.box2-8 {position: absolute; 
+			top: 1950px;
+			left: 1010px;			
+			 width: 800px; text-align: left; letter-spacing: -0.6px; line-height: 40px;    
+			}
+
+
+		.box2-9 {position: absolute; 
+			top: 2110px;
+			left: 1010px;			
+			 width: 680px; text-align: left; letter-spacing: -0.2px; line-height: 40px;     
+			}
+
+		.box2-10 {position: absolute; 
+			top: 2220px;
+			left: 1010px;			
+			 width: 680px; text-align: left; letter-spacing: -0.2px; line-height: 40px;    
+			}
+		.half_background {
+		background: linear-gradient(to top, yellow 50%, transparent 50%);
+			}
+
+		.box2-11 {position: absolute; padding-top: 10px; padding-right: 30px; padding-left: 100px; top: 1340px; left: 0px; width: 1120px; height: 210px; font-size: 26px; background-color: white; border: 3px solid black; transition:.25s; }
+
+		.box2-12 {position: absolute; padding-top: 10px; padding-left: 100px; padding-right: 30px; padding-left: 100px; top: 1325px; left: -15px; width: 1120px; height: 210px; background-color: white; border: 3px solid black; transition:.25s;}
+		.box2-12 p{font-size: 25px; line-height: 150%; letter-spacing: -0.6px;}
+
+		.box2-12:hover{background-color: red; color: white; transform: translate(-0.4rem, -0.4rem);}
+
+		
+		
+
+
+		.sec3 {position: relative; height: 2750px; background-color: #fbf5eb;}
+		.sec3 p{font-size: 26px; font-family:'Noto Sans KR'; font-weight:500; font-style:sans-serif; line-height: 40px; letter-spacing: -0.4px; word-spacing: 0.5px;}
+		.img3 {position: absolute;
+		 	 width: 49%; top: 150px;}
+
+				 
+		.img4 {position: absolute;
+		 	 width: 50%; top: 1000px; right: 0;}
+		.box3 {position: absolute; 
+			top: 270px;
+			left: 1150px;			
+			 width: 500px; text-align: left;	   
+			}
+		 	 
+		.box3-2 {position: absolute; 
+			top: 1350px;
+			left: 300px;			
+			 width: 460px; text-align: left;    
+			}
+		 	 
+		.sec4 {position: relative; height: 1840px; background-color: #ffc502; margin-bottom: 380px;}
+		.sec4 p{font-size: 26px; font-family:'Noto Sans KR'; font-weight:500; font-style:sans-serif;}
+
+		
+		.imgbox3{position: absolute; top: -200px;
+			left: 49%;
+			transform: translate(-50%, -50%);
+			 width:1150px; height: 730px;
+			 background-color: white; 
+			 border: 3px solid black;}
+
+		.imgbox3-2 {position: absolute; top: -210px;
+			left: 48.5%;
+			transform: translate(-50%, -50%);
+			 width:1150px; height: 730px; 
+			 background-color: #ffc502; 
+			 border: 3px solid black;}
+		.imgbox3-2 img{ width: 112%; margin-top: 69px; margin-left: -55px;}
+
+
+		
+
+		.imgbox3-3{position: absolute; top: 550px;
+			left: 240px;			
+			 width:600px; height: 500px;
+			 background-color: white; 
+			 border: 3px solid black;}
+
+		.imgbox3-4 {position: absolute; top: 535px;
+			left: 225px;			
+			 width:600px; height: 500px; 
+			 background-color: #fbf5eb; 
+			 border: 3px solid black;}
+		.imgbox3-4 img{ width: 100%; margin-top: 0px; margin-left: 0px; }
+		.effect-3 .imgbox3-4 {
+			  transform: scale(1);
+			  transition: .4s;
+			}
+
+		.effect-3:hover .imgbox3-4 { background-color: #ffc502; 
+			  transform: scale(1.2);
+			}
+
+		.box4 {position: absolute; top:-800px; left: 280px; width: 600px; height: 130px; font-size: 86px; color: #ffc502;}
+	
+		
+		.box4-2{position: absolute; top:-690px; left: 280px; width: 930px; height: 140px; background-color: white; border: 3px solid black; transition:.25s;}	
+
+		.box4-3 {position: absolute; top:-700px; left: 270px; width: 930px; height: 140px;  font-size: 130px;  background-color: white; border: 3px solid black; transition:.25s; }
+			
+		.box4-3 p{ text-align: center; font-family: 'Black Han Sans'; 
+								font-weight: 500; margin-top: 14px;
+						      font-style:sans-serif;   
+							  font-size: 105px; color: #090c41;}
+
+		.box4-4{position: absolute; top: 200px;}
+
+
+		.box4-5 {position: absolute; 
+			top: 570px;
+			left: 1000px;			
+			 width: 600px;  
+			}
+		.box4-5 p{font-size: 29px; text-align: left; line-height: 170%; letter-spacing: -0.6px; word-spacing: 0.4px;}
+		.box4-6 {position: absolute; 
+			top: 780px;
+			left: 1000px;			
+			 width: 580px;  
+			}
+		.box4-6 p{font-size: 31px; text-align: left; line-height: 170%; letter-spacing: -0.6px; word-spacing: 0.4px;}
+
+		.img5 {position: absolute;
+		 	 width: 52%; top: 50px;}
+		.img6 {position: absolute;
+		 	 width: 52%; top: 1000px; right: 0;}
+
+		.box9-1 {position: relative; top:1300px; left: 650px; width: 800px; height: 90px; background-color: white; border: 3px solid black;}	
+		.box9-1 p{font-size: 32px; text-align: center; margin-top: 20px; letter-spacing: -0.7px;}
+
+	.box9-2 {position: relative; top:1300px; left: 1000px; width: 750px; height: 90px; background-color: white; border: 3px solid black;}
+	.box9-2 p{font-size: 32px; text-align: center; margin-top: 20px; letter-spacing: -0.7px;}
+	.box9-3 {position: relative; top:-12px; left: -12px; width: 750px; height: 90px; text-align: center; background-color: white; border: 3px solid black;}
+
+	.box9-4 {position: relative; top:1220px; left: 820px; width: 1100px; height: 90px;background-color: white; border: 3px solid black;  animation: compare1 1.3s infinite alternate; animation-timing-function:ease-in-out;}
+	.box9-5 {position: relative; top:-12px; left: -12px; width: 1100px; height: 90px;  font-size: 37px; text-align: center;  background-color: white; border: 3px solid black; }
+	.box9-5 p{font-size: 37px; margin-top: 16px; letter-spacing: -0.4px;}
+	.box9-5 a{text-decoration: none;  color: black;}
+	.dimg{position: relative; width: 60%; top: 1320px; left: 600px; animation: compare2 1.3s infinite alternate; animation-timing-function:ease-in-out;}
+	@-webkit-keyframes compare1{
+		  from{
+		    left: 850px;
+		  }
+		  to{
+		    left: 920px;
+		  }
+		}
+
+	@-webkit-keyframes compare2{
+		  from{
+		    left: 640px;
+		  }
+		  to{
+		    left: 570px;
+		  }
+		}
+
+
+		
+
+	</style> 
+</head>
+<body>
+	<div class="mcontain">
+		<a href="#"> 
+		<span class="upkey korblack "> 
+		    top
+		</span>
+		</a>
+
+
+		<div id="menubox">
+
+	    <div id="dropdowncontent">
+	      <a href="./index.html"><p class="kor500">0.입장하기</p></a>
+	      <a href="./intro.html"><p class="kor500">1.about</p></a>
+	      <a href="./bogoo.html"><p class="kor500">2.실태 보고서</p></a>
+	      <a href="./nep.html"><p class="kor500">3.어쩌다보니 넵병</p></a>
+	      <a href="./cctv.html"><p class="kor500">4.네 마음속 CCTV</p></a>
+	      <!--a href="./7.html"><p class="kor500">  </p></a-->
+	    </div>
+
+	    <div id="menuff">
+	      <h1 id="menutxt">menu</h1>
+	    </div>
+
+		</div>
+
+		 <section class="head">
+		 	<div data-aos="fade-right"
+    		 data-aos-offset="600"
+    		 data-aos-duration="700"
+    		 data-aos-easing="ease-in-sine" class="box1 korblack"><p>Z세대</p></div>
+		 	<h1>
+		 		직장인의 이야기		 		
+		 	</h1>
+		 	<h2>
+		 		직장인의 이야기		 		
+		 	</h2>
+
+
+
+		 	<img src="in1.png" class="s1">
+		 	<img src="in2.png" class="s2">
+		 </section>	
+
+		 <section class="sec2">
+		 	<div class="effect-1">
+			  <div class="imgbox1"></div><div class="imgbox1-2">
+			  	<img src="1.gif"></div>
+			 
+
+			
+			 <div class="korblack p2-1">하루의 반나절을<br>엉덩이 붙여 생활하는</div>
+				<img data-aos="fade-up" src="in2-2.png" class="p2-2">
+		 	
+
+		 	 <div class="thumb-box box2-2">
+	  			<p> 
+				    <span class="main-title">매일 같이 서둘러 출근을 하고<br>
+				    오늘도 들려오는 꼰대의 잔소리에<br></span>
+				    <span class="description">
+					조용히 의자에 녹아들어 <br>멍하니 키보드를 두드린다.<br> <br>
+
+					
+					퇴근 시간은 점점 다가오고<br> 처리해야 할 업무는 산더미인<br> 
+					매일 똑같은 일상의 반복 </span>
+					</span>
+				</p>
+			</div>
+			</div>
+			  			
+			
+
+			 <div data-aos="fade-right" class="box2-11"></div><div data-aos="fade-right" class="box2-12 kor500"><p>전쟁터에서는 누구나 상처를 입는다. 
+				그 상처가 누군가에게는
+				내일도 기대하고 싶은 사랑일 수도 <br>
+				누군가에게는 오늘도 살아남았다는 안도일 수도
+				어쩌면 누군가에겐 다시는 속고 싶지 않은 희망일 수도 <br>
+				그 상처가 무엇이든 얼마나 
+				깊든 크든 간에 어쨌든 우리는 오늘도 모두 출근을 한다.<br>
+				<span style="font-size: 22px;">-드라마 '직장의 신'</span></p></div>
+
+
+			<img src="rot3.png" class="rot3">				
+
+			<div class="box2-5 korblack">			
+					 회사에서의 나는</div>
+			<div class="box2-6"></div>
+			<div data-aos="flip-up" class="box2-7"><p>쳇바퀴 속 다람쥐</p></div>
+			<div class="effect-2">
+			<img src="1-2.png" class="img2">
+			</div>
+
+			<div class="box2-8"><p>나 자신이 쳇바퀴 속 다람쥐 같은 신세처럼 느껴질 때, <br>그렇다고 직장을 그만둘 수도 없는 내 마음...</p></div>	
+
+			<div class="box2-9"><p><span class="half_background">내가 무서운 얘기 하나, 더 해줄까요?<br>
+			내일 월요일이에요.</span></p></div>
+			<div class="box2-10"><p><span class="half_background">
+			도대체 일이 전부인 직장인에게
+			일에 반하는 <br>신념이란 무엇인가?
+			아니, 그런게 있기는 한건가?<br>
+			아니면, 영혼없는 일개미가
+			되지 않기 위한 몸부림이거나<br>
+			<span style="font-size: 22px;">-드라마 '미생 8화'</span></p></div>
+
+
+
+		 </section>
+
+		 <section class="sec3">
+		 	<img src="2.gif" class="img3">
+		 	<div class="box3"  style="display:inline-block;">
+			    <p>“매일 지옥철을 겪으면서 출근하고 제품 수익률을 위해 환율과 국제통상 가격을 매일 체크하고 숫자 하나때문에 수많은 절차를 두어 실수를 방지하고 문장 하나때문에 법정해석을 검토하고 결과를 집행합니다.”<br><br>
+				“서류만 넘기면 되는 것이 아닙니다. 밀고 당기는 많은 대화가 있고 그 과정에서 자기자신이 초라해 보이기까지 하죠. OK 전화 한 통을 받기 위해 해당국 업무시간까지 밤을 새워 대기하기도 합니다.” <p>
+			  </div>
+
+				<img src="3.gif" class="img4">
+		 	<div class="box3-2"  style="display:inline-block;">
+			    <p>“진짜 이러고도 계속 회사 다녀야돼?
+					아니, 열심히 하고도 우리는 왜 이런 대접을 받아야 하냐고.. 세상의 정의는 어디간거야, 우리 <br>진짜 열심히 했잖아...”<br><br>
+					<span style="font-size: 22px"> -드라마 '미생'</span> <p>
+			  </div>
+
+		 </section>
+
+
+		 <section class="sec4">
+		 	<div class="marquee3 box4-4"><p style="font-family: 'Black Han Sans'; font-style:sans-serif; font-size: 190px;">우리의 똑같은 일상 너 나 똑같은 우리들의 이야기 </p></div>
+
+		 	 <div class="imgbox3"></div><div class="imgbox3-2">
+		 	 	<img src="in4.png"></div>
+
+		 	
+		 	<div class="box4 korblack">			
+					 하루하루를 버티며</div>
+			
+			<div data-aos="flip-up" class="box4-3"><p>조금만 더 버티자</p></div>			
+			
+			<div class="effect-3">
+			 <div class="imgbox3-3">		 	 	
+		 	 </div>
+		 	 <div class="imgbox3-4">
+		 	 	<img src="in5.png">
+		 	 </div>
+		 	</div>
+
+		   	<div class="box4-5"  style="display:inline-block;">
+		    <p>점심시간, 동료들과 커피한잔의 여유처럼<br>
+			햇살을 맞으며 반차쓰고 집가는 길의 설렘처럼
+			퇴근 후 마시는 맥주 한캔의 짜릿함처럼
+			<p>
+		    </div>
+
+		    <div class="box4-6"  style="display:inline-block;">
+		    <p>오늘도 일하고 계실 많은 직장인에게<br>
+			불안한 시대를 살아가는 웃픈 직장인에게<br>
+			웃음과 힐링을 전합니다.
+			<p>
+		    </div>
+
+
+		    <div class="box9-1 kor500"><p>변하는 세대와 변화하는 시대 문화의 실태</p></div>
+			   <div class="box9-2"><div class="box9-3 kor500"><p>새로운 세대의 관찰, 요즘 것들의 실태 보고서</p></div></div>
+			   <div class="dimg"><img src="direct.png"></div>
+			   <div class="box9-4"><div class="box9-5 kor500"><a href="./bogoo.html"><p>  <b>Z세대 실태 보고서 보러가기</b>&emsp;  &emsp; &emsp;  &nbsp; &nbsp;</p></a></div></div>
+		 </section>
+
+		 <footer class="fixed-footer">
+			<div class="footer-left">
+			   	<img src="footer.png">
+			   	<p>Taeyu Kim<br>
+			   		hjk3886@gmail.com<br>
+			   		insta_@taetae__yam
+			   	</p>
+
+			   	</h1>
+			</div>
+
+			<div class="footer-right">
+
+			<h1>일은 하고 싶지만, 회사는 가기 싫은 Z세대의 이야기</h1>			  
+			   	<p>빠르게 변하는 세상에서  같이 일하는 동료이자, 앞으로 시장을 주도할 현세대를 이해하려는 노력은 모두의 생존을 위해 필요합니다. 우리가 맞이할 직장에서 새로운 세대와 함께 생존하기 위한 가이드이자 우리의 생각을 이야기하려 합니다. 일은 하고 싶지만, 회사는 싫은 거침없는 Z세대의 행보를 만나보세요!
+			   	</p>
+			   
+			</div>
+
+			<div class="footer-bottom">Copyright©2020.Kim Taeyu.All rights reserved.</div>
+
+
+		</footer>
+
+		 
+
+		 
+	</div>
+
+
+
+
+
+
+	<script>
+
+		menuff.onmouseover=function(){
+	     dropdowncontent.style.visibility = "visible";
+	     dropdowncontent.style.height = "350px";
+	     dropdowncontent.style.transition="all 0.2s";
+	     menuff.style.cursor="url(cursor1.png) 0 0 ,auto;";
+	     menuff.style.borderRadius="50%";
+	     menubox.style.height="460px";
+	   }
+
+
+
+	  menubox.onmouseout=function(){
+	    dropdowncontent.style.visibility = "hidden";
+	    dropdowncontent.style.height = "0px";
+	    dropdowncontent.style.transition="all 0.2s";
+	    menuff.style.borderRadius="0%";
+	    menubox.style.transition="all 0.2s";
+	    menubox.style.height="60px";
+	}
+
+	  dropdowncontent.onmouseover=function(){
+	    dropdowncontent.style.visibility="visible";
+	    dropdowncontent.style.height="350px";
+	    menuff.style.borderRadius="0%";
+	    menubox.style.height="460px";
+	  }
+
+	
+
+
+ </script>
+
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+  AOS.init();
+</script>
+</body>
+</html>
