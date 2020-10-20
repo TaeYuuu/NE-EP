@@ -87,7 +87,7 @@
 
 
 					
-				.badge {border: 3px solid #ffc502; box-sizing: border-box;
+				.badge {border: 3px solid transparent; box-sizing: border-box;
 			  position: absolute;
 			  width: 100px;
 			  border-radius: 50%;
