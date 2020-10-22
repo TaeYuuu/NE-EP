@@ -15,134 +15,24 @@
 	 <script type="text/javascript" src="http://www.blueb.co.kr/SRC/javascript/moveobj.js"></script>
 
 	 <style>
+
+	 html, body, header, footer, nav, figure, img {box-sizing:border-box; margin: 0; padding:0;}
+
 	  .mcontain {position: relative; width:1900px; margin:0 auto; border: 1px solid blue;  overflow: hidden;}
 	  .mcontain2 { position: relative; width:1900px; margin:0 auto; border: 1px solid blue;  overflow: hidden;}
-	   .sec0 { position: relative; height:1080px; background: linear-gradient(180deg, #ffc502 54%, #fbf5eb 46%); z-index: 2;}
-	   @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+	   .sec0 { position: relative; height:1600px; background: linear-gradient(180deg, #ffc502 54%, #fbf5eb 46%); z-index: 2;}
+	
 
+	   .box6-3 {position: relative; top: 300px; left: 12px; margin: 0 auto; width: 1535px; height: 1400px; background-color: white; border: 3px solid black; }	
+	.box6-4 {position: relative; top: -17px; left: -17px; width: 1535px; height: 1400px; background-color: white; border: 3px solid black; }	
+	.box6-5 {position: relative; top: -17px; left: -17px; width: 1515px; height: 1400px; background-color: white; border: 3px solid black; overflow: hidden; padding-left: 10px; padding-right: 10px; }
 
+	.box6-6 {position: relative; top: -45px; margin: 0 auto; width: 1200px; }
+	.box6-6 h1 {font-size: 45px; }
+	.box6-6 p {margin-top: -20px; font-size: 29px; line-height: 165%; letter-spacing: -1.2px;}
 
-.text {
-  position: relative;
-  width: 1800px;
-  left: -30%;  
-  height: 40px;
-  top: 0%;
- background-color: red;
-}
-
-
-.text p {font-size: 450px;  letter-spacing: 70px;			  
-				  text-align: center;
-				  text-transform: uppercase;
-				  white-space: nowrap;
-				  -webkit-text-stroke: 3px #ffc502;
-					text-stroke: 2px #ffc502; 
-				text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
-  display: inline-block;
-  vertical-align: top;
-  margin: 0;
-}
-
-.word {
-  position: absolute;
-  width: 1800px; background-color: blue;
-  opacity: 0;
-}
-
-.letter {
-  display: inline-block;
-  position: relative;
-  float: left;
-  transform: translateZ(25px);
-  transform-origin: 50% 50% 25px;
-}
-
-.letter.out {
-  transform: rotateX(90deg);
-  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.letter.behind {
-  transform: rotateX(-90deg);
-}
-
-.letter.in {
-  transform: rotateX(0deg);
-  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.wisteria {
-  color: #8e44ad;
-}
-
-.belize {
-  color: #2980b9;
-}
-
-.pomegranate {
-  color: #c0392b;
-}
-
-.green {
-  color: #16a085;
-}
-
-.midnight {
-  color: #2c3e50;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
    
-    .back {
-        margin:2em auto;
-       
-    }
-    .back span {border: 4px solid white;
-        font-size:6em;
-        color:#F2C640;
-        background:#262B37;
-        display:table-cell; border
-        box-shadow:inset 0 0 5px rgba(0,0,0,0.3), 0 5px 0 #ccc;
-        padding: 30 100px; text-align: right;
-        line-height: 150px; letter-spacing: 20px;
-        animation:jumb 2s infinite;
-    }
-    @keyframes jumb {
-        0% {
-            transform:translateY(0px)
-        }
-        50% {
-            transform:translateY(-30px);
-            box-shadow:0 15px 0 rgb(242, 198, 64);
-        }
-        100% {
-            transform:translateY(0px)   
-        }
-    }
-    .back span:nth-child(1) {
-        animation-delay:0s;
-    }
-    .back span:nth-child(2) {
-        animation-delay:.1s;    
-    }
-    .back span:nth-child(3) {
-        animation-delay:.2s;
-    }
-    .back span:nth-child(4) {
-        animation-delay:.3s;    
-    }
-    .back span:nth-child(5) {
-        animation-delay:.4s;
-    }
-    .back span:nth-child(6) {
-        animation-delay:.5s;    
-    }
-    .back span:nth-child(7) {
-        animation-delay:.6s;
-    }
-
-    .backbox{position: relative; top:50px; left: 300px; width:800px; height: 250px; background-color: red;}
+   
     .s1box1{ position: relative; top: -40px;	
 			  text-transform: uppercase;
 			   color: #fff;
@@ -154,22 +44,22 @@
 				  -webkit-text-stroke: 3px #ffc502;
 					text-stroke: 2px #ffc502; 
 				text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);}
-	   .sec1 {position: relative; height:1380px; background-color: #fbf5eb;}
+	   .sec1 {position: relative; height:1200px; background-color: #fbf5eb;}
 
-	   .nepbox1{position: relative; top: 100px; left: 180px; padding: 10px; width: 800px; height: 270px;}
+	   .nepbox1{position: relative; top: 200px; left: 180px; padding: 10px; width: 800px; height: 270px;}
 	   .nepbox1 h1{ text-align: left; 
 					  font-size: 32px; color: #6e6e6e;}
 
 	   .nepbox1 h2{ text-align: left; line-height: 100px; margin-top: -20px; font-size: 90px;}
-	   .nepbox1-2{position: relative; top: 45px; font-size: 450px; left: 170px; color: #ffc502;}
-	   .bar1{position: relative; top: 48px; width: 12px; height: 352px; left:180px; background-color: black;}
-	   .nepbox1-3{position: relative; top: 48px; left: 220px; width: 600px; height: 345px; font-size: 29px; color: #6e6e6e; letter-spacing: -0.6px; line-height: 1.6;}
+	   .nepbox1-2{position: relative; top: 145px; font-size: 450px; left: 170px; color: #ffc502;}
+	   .bar1{position: relative; top: 148px; width: 12px; height: 352px; left:180px; background-color: black;}
+	   .nepbox1-3{position: relative; top: 148px; left: 220px; width: 630px; height: 345px; font-size: 29px; color: #6e6e6e; letter-spacing: -0.7px; line-height: 165%; word-spacing: 1px;}
 	   .rotypo{position: relative; top: 130px; left: 220px; width: 800px; height: 200px; font-size: 33px; line-height: 63px; transform: rotate(-90deg); }
 
 
 
 
-	    .sec3 {position: relative; height:780px; background-color: #fbf5eb; border: 1px solid red;}			    
+	    .sec3 {position: relative; height:600px; background-color: #fbf5eb; border: 0px solid red;}			    
 
 
 		
@@ -178,7 +68,7 @@
 
 		 /*----하단 바 코드----*/
 
-		 .accordion {display: flex; justify-content: flex-start; background: linear-gradient(360deg, #ffc502 75%, #fbf5eb 25%); position: absolute; left: 0; bottom: -10px; width: 100%;}
+		 .accordion {display: flex; justify-content: flex-start; background: linear-gradient(360deg, #ffc502 60%, #fbf5eb 40%); position: absolute; left: 0; bottom: -15px; width: 100%; }
 
 		 input[id*="answer"] {
 		 	display: none; 
@@ -187,14 +77,13 @@
 		  input[id*="answer"] + label {
 		  	display: block;
 		  	padding: 5px; 		  	
-		  	color: white;
-		  	background: linear-gradient(-180deg, #ffc502 65%, #fbf5eb 35%);
+		  	color: white; 
+		  	background: linear-gradient(0deg, #ffc502 60%, #fbf5eb 40%);
 		  	cursor: pointer;
-		  	position: relative; width: 200px;
-		  	font-family: 'Do Hyeon', sans-serif; font-weight: 500;
-		  	font-size: 140px; text-align: left;  text-indent: 100px; color: #ffc502;
-		  	 writing-mode: vertical-lr; 
-		  	 transform: rotate(180deg);
+		  	position: relative; width: 190px;  cursor: url(cursorH.png), auto;
+		  
+		  
+		  	
 
 		  }
 
@@ -202,18 +91,34 @@
 		   	max-width: 0;
 		   	transition: all .35s;
 		   	overflow: hidden;
-		   	background-color: yellow;
+		   	background-color: transparent; 
 		   
 		   }
 
 		    input[id*="answer"] + label + div img{
 		    	display: inline-block;
-		    	padding-right: 20px; 
+		    	padding-right: 30px; border-top: 17px solid  #ffc502;
 		    }
 
-		    input[id*="answer"]:checked + label + div { max-width: 400px; }
+		    input[id*="answer"]:checked + label + div { max-width: 190px; }
 
-
+		#vimeoWrap{
+		    position: relative;
+		    padding-bottom: 56.25%; /* 16/9 ratio */
+		    padding-top: 30px; /* IE6 workaround*/
+		    height: 0;
+		    overflow: hidden;
+		    margin: 0;
+		  }
+		#vimeoWrap iframe,
+		#vimeoWrap object,
+		#vimeoWrap embed {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		}
 
 	 </style>
 </head>
@@ -247,33 +152,27 @@
 		 
 
 		<section class="sec0">
-			<div class="backbox korblack">
-				<span class="back ">
-			    <span>어</span>
-			    <span>쩌</span>
-			    <span>다</span>
-			    <span>보</span>
-			    <span>니</span>   
-			</span>
-				</div>
 
 
-				<div class="text korblack">  
-			  <p>
-			    <span class="word wisteria">넵ㅎ</span>
-			    <span class="word belize">넵!!</span>
-			    <span class="word pomegranate">넵...?</span>
-			    <span class="word green">ㅋㅋ넵</span>
-			    <span class="word midnight">네엡</span>
-			  </p>
-			</div>
+		<div class="box6-3"><div class="box6-4"><div class="box6-5">	
+			<div id="vimeoWrap">
+   			 <iframe src="https://player.vimeo.com/video/470213173" webkitallowfullscreen mozallowfullscreen allowfullscreen>	
+   			 </iframe>
+		</div>
+	
+			<div class="marquee"><p style="font-size: 165px; opacity: 50%; position: relative; top: -30px">#직장인 #격공 #우리만의 #희로애락 #표현법</p></div>
+			<div class="box6-6 kor500">
+				<h1 class="kordo">
+					'넵병'에 대한 심층탐구
+
+				</h1>
+				<p>넵병은 직장에서 상사나 클라이언트에게 대답을 ‘넵’으로 하게 되는 증상을 말한다. ‘네’는 너무 딱딱하고 ‘넹’은 장난스러워 보이니 ‘넵’이라고 써서 보다 유하고 신속 정확한 느낌을 주고자 한다는 것이다. 짧은<br>대답 한마디에도 남의 시선을 신경 써야 하는 요즘 현대인의 고충이 담겨있다. </p></div>
 			
 		</section>
 
 
-		<video width="1900" height="1000" controls>
-  <source src="nep_syndrome_2.mp4" type="video/mp4">
-		</video>
+
+	
 
 
 
@@ -287,7 +186,7 @@
 			<div class="nepbox1-2 korblack" style="display:inline-block;">넵</div>
 			<div class="bar1" style="display:inline-block;"></div>
 			<div class="nepbox1-3 kor500" style="display:inline-block;">
-				'넵'병은 '을'의 관계에 있는 사람들이 '갑'에게 대답할 때 자기도 모르게 '넵'을 타이핑하게 되는 슬픈 현상을 의미한다. ‘네’는 너무 딱딱하고 ‘넹’은 장난스러워 보이니 ‘넵’이라고 써서 보다 유하고 신속 정확한 느낌을 주고자 한다는 것이다. 짧은 대답 한마디에도 남의 시선을 신경 써야 하는 요즘 현대인의 고충이 담겨있다.
+				‘넵’병은 ‘을’의 관계에 있는 사람들이 ‘갑’에게 대답할 때 자기도 모르게 '넵'을 타이핑하게 되는 슬픈 현상을 의미한다. ‘네’는 너무 딱딱하고 ‘넹’은 장난스러워 보이니 ‘넵’이라고 써서 보다 유하고 신속 정확한 느낌을 주고자 한다는 것이다. 짧은 대답 한마디에도 남의 시선을 신경 써야 하는 요즘 현대인의 고충이 담겨있다.
 				넵병은 아직 뚜렷한 치료법이 발견되지 않아 지금도 창궐하고 있다.
 
 			</div>
@@ -308,36 +207,48 @@
 				
          		<div class="accordion">
 
-
+         			
    			<input type="radio" name="accordion" id="answer001">
    			<label for="answer001"></label>
    			<input type="radio" name="accordion" id="answer002">
    			<label for="answer002"></label>
+   			<input type="radio" name="accordion" id="answer003">
+   			<label for="answer003"></label>
    			
    			
 
    			<input type="radio" name="accordion" id="answer01">
-   			<label for="answer01"><span style="margin-bottom: -150px;"><span class="outline">NEP</span>&nbsp;...?</label>
-   			<div><img src="under1.png"></div>
+   			<label for="answer01"><img id="img1" src="nep001.png">
+   			<img id="img2" src="nep01.png"></label>
+   			<div><img src="nep011.png"></div>
 
    			<input type="radio" name="accordion" id="answer02">
-   			<label for="answer02"><span style="margin-bottom: -150px;"><span class="outline">NEP</span>&nbsp;^^</label>
-   			<div><img src="under1.png"></div>
+   			<label for="answer02"><img id="img3" src="nep001.png">
+   			<img id="img4" src="nep02.png"></label>
+   			<div><img src="nep022.png"></div>
 
    			<input type="radio" name="accordion" id="answer03">
-   			<label for="answer03"><span style="margin-bottom: -150px;"><span class="outline">NEP</span>&nbsp;~~</label>
-   			<div><img src="under1.png"></div>
+   			<label for="answer03"><img id="img5" src="nep001.png">
+   			<img id="img6" src="nep03.png"></label>
+   			<div><img src="nep033.png"></div>
 
    			<input type="radio" name="accordion" id="answer04">
-   			<label for="answer04"><span style="margin-bottom: -150px;"><span class="outline">NEP</span>&nbsp;!!!</span></label>
-   			<div><img src="under1.png"></div>
+   			<label for="answer04"><img id="img7" src="nep001.png">
+   			<img id="img8" src="nep04.png"></label>
+   			<div><img src="nep044.png"></div>
 
    			<input type="radio" name="accordion" id="answer05">
-   			<label for="answer05"><span style="margin-bottom: -150px;"><span class="outline">NEP</span>&nbsp;NEP</label>
-   			<div><img src="under1.png"></div>
+   			<label for="answer05"><img id="img9" src="nep001.png">
+   			<img id="img10" src="nep05.png"></label>
+   			<div><img src="nep055.png"></div>
 
    			<input type="radio" name="accordion" id="answer06">
-   			<label for="answer06"></label>
+   			<label for="answer06"><img src="nep066.png">
+   			</label>  
+   		
+   			
+ 	
+
    			
    		
 
@@ -347,14 +258,6 @@
 		</section>
 
 
-
-<DIV ID="flyimage1" STYLE="position:absolute; left: -500px; width:47; height:68;">
-<A HREF="intro.html"><IMG SRC="넵.png" BORDER=0></a>
-</DIV>
-
-<DIV ID="flyimage2" STYLE="position:absolute; left: -500px; width:47; height:68;">
-<A HREF="intro.html"><IMG SRC="넵.png" BORDER=0></a>
-</DIV>
 
 
 
@@ -373,6 +276,133 @@
  <script>
    		 AOS.init();
  </script>
+
+ <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+ 	
+ </script>
+ 
+<script>
+    $(document).ready(function(){
+            /*웹페이지 열었을 때*/
+            $("#img1").show();
+            $("#img2").hide();
+ 
+            /*img1을 클릭했을 때 img2를 보여줌*/
+            $("#img1").click(function(){
+                $("#img1").hide();
+                $("#img4").hide();
+                $("#img6").hide();
+                $("#img8").hide();
+                $("#img10").hide();
+                $("#img2").show();
+                $("#img3").show();
+                $("#img5").show();
+                $("#img7").show();
+                $("#img9").show();
+
+            });
+ 
+            /*img2를 클릭했을 때 img1을 보여줌
+            $("#img2").click(function(){
+                $("#img1").show();
+                $("#img2").hide();
+            });*/
+        });
+
+     $(document).ready(function(){
+            /*웹페이지 열었을 때*/
+            $("#img3").show();
+            $("#img4").hide();
+ 
+            /*img1을 클릭했을 때 img2를 보여줌*/
+            $("#img3").click(function(){   
+            	$("#img2").hide();               
+                $("#img3").hide();               
+                $("#img6").hide();
+                $("#img8").hide();
+                $("#img10").hide();                
+                $("#img1").show();
+                $("#img4").show();
+                $("#img5").show();
+                $("#img7").show();
+                $("#img9").show();
+            });
+ 
+            /*img2를 클릭했을 때 img1을 보여줌
+            $("#img4").click(function(){
+                $("#img3").show();
+                $("#img4").hide();
+            });*/
+        });
+
+       $(document).ready(function(){
+            /*웹페이지 열었을 때*/
+            $("#img5").show();
+            $("#img6").hide();
+ 
+            /*img1을 클릭했을 때 img2를 보여줌*/
+            $("#img5").click(function(){               
+                $("#img2").hide();               
+                $("#img4").hide();
+                $("#img5").hide();
+                $("#img8").hide();
+                $("#img10").hide();
+                $("#img6").show();
+                $("#img1").show();
+                $("#img3").show();                
+                $("#img7").show();
+                $("#img9").show();
+            });          
+        });
+
+         $(document).ready(function(){
+            /*웹페이지 열었을 때*/
+            $("#img7").show();
+            $("#img8").hide();
+ 
+            /*img1을 클릭했을 때 img2를 보여줌*/
+            $("#img7").click(function(){               
+                $("#img2").hide();               
+                $("#img4").hide();
+                $("#img6").hide();
+                $("#img7").hide();
+                $("#img10").hide();
+                $("#img8").show();
+                $("#img1").show();
+                $("#img3").show();
+                $("#img5").show();               
+                $("#img9").show();
+            });
+ 
+            /*img2를 클릭했을 때 img1을 보여줌
+            $("#img4").click(function(){
+                $("#img3").show();
+                $("#img4").hide();
+            });*/
+        });
+
+          $(document).ready(function(){
+            /*웹페이지 열었을 때*/
+            $("#img9").show();
+            $("#img10").hide();
+ 
+            /*img1을 클릭했을 때 img2를 보여줌*/
+            $("#img9").click(function(){               
+               $("#img2").hide();               
+                $("#img4").hide();
+                $("#img6").hide();
+                $("#img8").hide();
+                $("#img9").hide();
+                $("#img10").show();
+                $("#img1").show();
+                $("#img3").show();
+                $("#img5").show();
+                $("#img7").show();
+               
+            }); 
+        
+        });
+</script>
 
 
   <script>
@@ -409,26 +439,7 @@
 
  </script>
 
-<script type="text/javascript">
-var flyimage1, flyimage2
 
-function pagestart(){
-	flyimage1=new Chip("flyimage1",47,68);
-	flyimage2=new Chip("flyimage2",47,68);
-	
-
-	movechip("flyimage1");
-	movechip("flyimage2");
-	
-}
-
-if (window.addEventListener)
-	window.addEventListener("load", pagestart, false)
-	else if (window.attachEvent)
-		window.attachEvent("onload", pagestart)
-	else if (document.getElementById)
-		window.onload=pagestart
-</script>
 
 <script type="text/javascript">
 	var words = document.getElementsByClassName('word');
